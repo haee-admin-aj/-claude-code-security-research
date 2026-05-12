@@ -74,7 +74,7 @@ This is documented at [code.claude.com/docs/en/security](https://code.claude.com
 
 All findings were reported through Anthropic's official HackerOne program before this publication. All four were closed as "by design" by the account `claudesec-h1`. No embargo or pending fix applies.
 
-**On the triage process:** Three out of four reports were closed within minutes of submission — faster than a human could reasonably read a multi-page report containing source code analysis with line-number references. The responses were well-structured and directly addressed technical arguments, but their speed and pattern strongly suggest AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly Claude Mythos) to evaluate HackerOne submissions. No evidence of human review was observed in the recent three submissions. The entire code review and vulnerability analysis was performed by Claude Opus 4.6 (1M context) across 20+ parallel research agents — I was only the operator and orchestrator.
+**On the triage process:** Three out of four reports were closed within minutes of submission — faster than a human could reasonably read a multi-page report containing source code analysis with line-number references. The responses were well-structured and directly addressed technical arguments, but their speed and pattern strongly suggest AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly Claude Mythos) to evaluate HackerOne submissions. No evidence of human review was observed in the recent three submissions. The entire code review and vulnerability analysis was performed by Claude Opus 4.7 (1M context) across 20+ parallel research agents — I was only the operator and orchestrator.
 
 The four PoCs with full reproduction steps are available at [github.com/haee-admin-aj/-claude-code-security-research](https://github.com/haee-admin-aj/-claude-code-security-research).
 
@@ -82,4 +82,4 @@ This isn't a vulnerability disclosure. It's a warning: **know what "I trust this
 
 ---
 
-*Research conducted May 2026. Tested on Claude Code 2.1.89 and 2.1.139, Windows 10 Pro. Source analysis based on leaked Claude Code source (516K lines TypeScript). Code review by Claude Opus 4.6.*
+*Research conducted May 2026. Tested on Claude Code 2.1.89 and 2.1.139, Windows 10 Pro. Source analysis based on leaked Claude Code source (516K lines TypeScript). Code review by Claude Opus 4.7.*

@@ -107,7 +107,7 @@ Anthropic's position, stated consistently across all four HackerOne reports:
 
 All findings were reported through Anthropic's official [HackerOne program](https://hackerone.com/anthropic) and closed as "by design." No vulnerability embargo applies.
 
-**A note on the triage process:** Three out of four reports were closed within minutes of submission by the account `claudesec-h1`. The responses were structured, thorough, and arrived faster than a human could reasonably read a multi-page report with source code references — suggesting AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly Claude Mythos) to evaluate HackerOne submissions. No evidence of human review was observed in the recent three submissions. The entire code review and vulnerability analysis was performed by Claude Opus 4.6 (1M context) across 20+ parallel research agents — I was only the operator and orchestrator.
+**A note on the triage process:** Three out of four reports were closed within minutes of submission by the account `claudesec-h1`. The responses were structured, thorough, and arrived faster than a human could reasonably read a multi-page report with source code references — suggesting AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly Claude Mythos) to evaluate HackerOne submissions. No evidence of human review was observed in the recent three submissions. The entire code review and vulnerability analysis was performed by Claude Opus 4.7 (1M context) across 20+ parallel research agents — I was only the operator and orchestrator.
 
 ---
 
@@ -116,7 +116,7 @@ All findings were reported through Anthropic's official [HackerOne program](http
 - **Claude Code:** 2.1.89, 2.1.139
 - **OS:** Windows 10 Pro (10.0.19045)
 - **Source analysis:** Leaked source (2026-03-31), 516K lines TypeScript
-- **Code review:** Performed by Claude Opus 4.6 (1M context) across 20+ research agents
+- **Code review:** Performed by Claude Opus 4.7 (1M context) across 20+ research agents
 
 ---
 
