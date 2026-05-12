@@ -126,4 +126,4 @@ This repository is for **educational and security awareness purposes only**. All
 
 ---
 
-*Research by [@justashar](https://twitter.com/justashar) — 2026-05-12*
+*Research by [@soaj1664ashar](https://x.com/soaj1664ashar) — 2026-05-12*
