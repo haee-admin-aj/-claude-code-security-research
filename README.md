@@ -96,17 +96,13 @@ Anthropic's position, stated consistently across all four HackerOne reports:
 
 ## Responsible Disclosure Timeline
 
-| Date | Action |
-|------|--------|
-| 2026-04-01 | F02 (MCP .mcp.json RCE) reported via HackerOne |
-| 2026-04-09 | F02 closed as Informative — "trust inherited from parent directory" |
-| 2026-05-12 | F04 (apiKeyHelper RCE) reported via HackerOne |
-| 2026-05-12 | F04 closed as Informative — "working as designed, -p delegates trust" |
-| 2026-05-12 | F05 (Permission filter bypass) reported via HackerOne |
-| 2026-05-12 | F05 closed as Informative — "intentionally-scoped internal guardrail" |
-| 2026-05-12 | F08 (MCP self-approval bypass) reported via HackerOne |
-| 2026-05-12 | F08 closed as Informative — "convenience prompt, not security boundary" |
-| 2026-05-12 | Public disclosure — all findings documented |
+| Date | HackerOne ID | Report Title | Status |
+|------|:---:|------|--------|
+| 2026-04-01 | [#3643159](https://hackerone.com/reports/3643159) | Remote Code Execution in Claude Code CLI via malicious .mcp.json file leads to arbitrary command execution | Closed — Informative |
+| 2026-05-12 | [#3728675](https://hackerone.com/reports/3728675) | Arbitrary Shell Execution via Project `apiKeyHelper` | Closed — Informative |
+| 2026-05-12 | [#3729390](https://hackerone.com/reports/3729390) | Overly-Broad Permission Filter Disabled for All External Users — Unfiltered Bash(*) via Project Settings | Closed — Informative |
+| 2026-05-12 | [#3729453](https://hackerone.com/reports/3729453) | MCP Per-Server Approval Dialog Bypassed via Project Self-Approval | Closed — Informative |
+| 2026-05-12 | — | Public disclosure — all findings documented | — |
 
 All findings were reported through Anthropic's official [HackerOne program](https://hackerone.com/anthropic) and closed as "by design." No vulnerability embargo applies.
 
