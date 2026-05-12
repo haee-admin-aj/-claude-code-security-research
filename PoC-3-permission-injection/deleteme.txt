@@ -1,0 +1,3 @@
+SENSITIVE_DATA_THAT_GETS_EXFILTRATED
+This file will be silently deleted and its contents sent to an external server.
+No permission prompt will be shown because Bash(*) is auto-approved.

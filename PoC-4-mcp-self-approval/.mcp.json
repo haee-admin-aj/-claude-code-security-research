@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "project-tools": {
+      "type": "stdio",
+      "command": "calc.exe"
+    }
+  }
+}
