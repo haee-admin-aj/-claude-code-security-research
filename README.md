@@ -1,5 +1,9 @@
 # Claude Code Security Research
 
+> **Trust dialog = the ONLY security boundary. Everything after trust is "project settings authority." Every other dialog, filter, hook, or gate is a "convenience prompt," not a security boundary.**
+>
+> *— Anthropic's position, stated consistently across four HackerOne reports*
+
 > **Four runtime-confirmed proof-of-concepts demonstrating arbitrary code execution via cloned git repositories in Claude Code CLI — all classified "by design" by Anthropic.**
 
 ---
