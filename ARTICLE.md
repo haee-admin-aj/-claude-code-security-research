@@ -4,7 +4,7 @@
 
 ---
 
-I spent a week auditing the Claude Code CLI source code — 516,000 lines of TypeScript, leaked from Anthropic's npm registry on March 31, 2026. I found four separate ways a malicious git repository can execute arbitrary commands on your machine. I reported all four through Anthropic's HackerOne bug bounty program. All four were reviewed by their security team and closed as **"Informative — working as designed."**
+I spent some time auditing the Claude Code CLI source code — 516,000 lines of TypeScript, leaked from Anthropic's npm registry on March 31, 2026 — with the help of Claude Opus 4.7 for code review and GPT 5.5 for prompting strategy. I found four separate ways a malicious git repository can execute arbitrary commands on your machine. I reported all four through Anthropic's HackerOne bug bounty program. All four were closed as **"Informative — working as designed."**
 
 This article explains what I found, what it means for you, and why you should care.
 
@@ -74,7 +74,7 @@ This is documented at [code.claude.com/docs/en/security](https://code.claude.com
 
 All findings were reported through Anthropic's official HackerOne program before this publication. All four were closed as "by design" by the account `claudesec-h1`. No embargo or pending fix applies.
 
-**On the triage process:** Three out of four reports were closed within minutes of submission — faster than a human could reasonably read a multi-page report containing source code analysis with line-number references. The responses were well-structured and directly addressed technical arguments, but their speed and pattern strongly suggest AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly Claude Mythos) to evaluate HackerOne submissions. No evidence of human review was observed in the recent three submissions. The entire code review and vulnerability analysis was performed by Claude Opus 4.7 (1M context) across 20+ parallel research agents — I was only the operator and orchestrator.
+**On the triage process:** Three out of four reports were closed within minutes of submission — faster than a human could reasonably read a multi-page report containing source code analysis with line-number references. The responses were well-structured and directly addressed technical arguments, but their speed and pattern strongly suggest AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly Claude Mythos) to evaluate HackerOne submissions. No evidence of human review was observed in the recent three submissions. The entire code review and vulnerability analysis was performed by Claude Opus 4.7 (1M context) — I was only the operator and orchestrator.
 
 The four PoCs with full reproduction steps are available at [github.com/haee-admin-aj/-claude-code-security-research](https://github.com/haee-admin-aj/-claude-code-security-research).
 
