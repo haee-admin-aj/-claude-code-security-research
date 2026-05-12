@@ -3,6 +3,9 @@
 > [!CAUTION]
 > Yes, this repo is a live PoC. Clone it, run `claude`, accept trust, and watch three Calculators race to your taskbar. Don't worry — it's just `calc.exe`. Three times. For science.
 
+![Three Calculators spawned by Claude Code after cloning this repository](claude3CALCs.png)
+*Three Calculator instances spawned simultaneously on Claude Code 2.1.139 — one from each attack vector. No prompts. No approval dialogs. Just `git clone` → `claude` → three calcs.*
+
 > **Trust dialog = the ONLY security boundary. Everything after trust is "project settings authority." Every other dialog, filter, hook, or gate is a "convenience prompt," not a security boundary.**
 >
 > *— Anthropic's position, stated consistently across four HackerOne reports*
