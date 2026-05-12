@@ -72,10 +72,16 @@ This is documented at [code.claude.com/docs/en/security](https://code.claude.com
 
 ## Responsible Disclosure
 
-All findings were reported through Anthropic's HackerOne program before this publication. Each was reviewed by their security team, discussed in detail, and explicitly closed as "by design." No embargo or pending fix applies. The four PoCs with full reproduction steps are available at [github.com/haee-admin-aj/-claude-code-security-research](https://github.com/haee-admin-aj/-claude-code-security-research).
+All findings were reported through Anthropic's official HackerOne program before this publication. All four were closed as "by design" by the account `claudesec-h1`. No embargo or pending fix applies.
+
+**On the triage process:** Every report was closed within minutes of submission — faster than a human could reasonably read a multi-page report containing source code analysis with line-number references. The responses were well-structured and directly addressed technical arguments, but their speed and pattern strongly suggest AI-assisted or fully automated triage. It appears Anthropic's HackerOne pipeline uses their own AI models to evaluate security submissions. No evidence of human review was observed at any stage of the four reports.
+
+The code review and vulnerability analysis for this research was performed by Claude Opus 4.6 (1M context window) across 20+ parallel research agents. The prompting strategy and report structuring was human-directed.
+
+The four PoCs with full reproduction steps are available at [github.com/haee-admin-aj/-claude-code-security-research](https://github.com/haee-admin-aj/-claude-code-security-research).
 
 This isn't a vulnerability disclosure. It's a warning: **know what "I trust this folder" actually means before you click it.**
 
 ---
 
-*Research conducted May 2026. Tested on Claude Code 2.1.89 and 2.1.139, Windows 10 Pro. Source analysis based on leaked Claude Code source (516K lines TypeScript).*
+*Research conducted May 2026. Tested on Claude Code 2.1.89 and 2.1.139, Windows 10 Pro. Source analysis based on leaked Claude Code source (516K lines TypeScript). Code review by Claude Opus 4.6.*

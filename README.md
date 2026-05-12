@@ -102,7 +102,9 @@ Anthropic's position, stated consistently across all four HackerOne reports:
 | 2026-05-12 | F08 closed as Informative — "convenience prompt, not security boundary" |
 | 2026-05-12 | Public disclosure — all findings documented |
 
-All findings were reported through Anthropic's official [HackerOne program](https://hackerone.com/anthropic), reviewed by their security team, and explicitly closed as "by design." No vulnerability embargo applies.
+All findings were reported through Anthropic's official [HackerOne program](https://hackerone.com/anthropic) and closed as "by design." No vulnerability embargo applies.
+
+**A note on the triage process:** All four reports were closed within minutes of submission by the account `claudesec-h1`. The responses were structured, thorough, and arrived faster than a human could reasonably read a multi-page report with source code references — suggesting AI-assisted or fully automated triage. It appears Anthropic uses an AI-powered review pipeline (possibly their own models) to evaluate HackerOne submissions. No evidence of human review was observed at any stage.
 
 ---
 
@@ -111,6 +113,7 @@ All findings were reported through Anthropic's official [HackerOne program](http
 - **Claude Code:** 2.1.89, 2.1.139
 - **OS:** Windows 10 Pro (10.0.19045)
 - **Source analysis:** Leaked source (2026-03-31), 516K lines TypeScript
+- **Code review:** Performed by Claude Opus 4.6 (1M context) across 20+ research agents
 
 ---
 
