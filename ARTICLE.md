@@ -1,5 +1,7 @@
 # I Clicked "I Trust This Folder" in Claude Code. Three Calculators Opened.
 
+![I Trust This Folder? Full Shell Access — By Design](article-cover.png)
+
 **Four independently confirmed paths to arbitrary code execution via cloned git repositories in Anthropic's Claude Code CLI.**
 
 ---
